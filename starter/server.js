@@ -3,7 +3,7 @@ dotenv.config({path:`${__dirname}/config.env`})
 const app = require('./app')
 
 
-console.log('jutt warraich')
+
 
 const mongoose= require('mongoose');
 const DB = //process.env.DATABASE.replace(
@@ -25,3 +25,4 @@ const port=process.env.PORT;
 app.listen(port,()=>{
     console.log(`listening on port ${port}`)
 })
+console.log('jutt warraich')
