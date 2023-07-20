@@ -3,7 +3,7 @@ dotenv.config({path:`${__dirname}/config.env`})
 const app = require('./app')
 
 
-
+console.log('jutt warraich')
 
 const mongoose= require('mongoose');
 const DB = //process.env.DATABASE.replace(
