@@ -93,9 +93,17 @@ catch(err){
 
 exports.deleteTour=async (req,res)=>{
    
-    try {}
-    catch {}
-const deletedTour= await Tour.deleteOne({"_id":req.body.id});
+    try {
+        const deletedTour= await Tour.deleteMany({"_id":req.body.id});
+        res.status(200).json({'status':'success', 'data':'Tour Deleted Succesfully'})
+    }
+    catch (err) {
+        res.status(400).json({
+            'status':'fail',
+            'error':err.message
+        })
+    }
+
 
     }
 
