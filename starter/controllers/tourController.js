@@ -92,10 +92,9 @@ catch(err){
 
 
 exports.deleteTour=async (req,res)=>{
-   console.log('abc')
     try {
-        const deletedTour= await Tour.deleteMany({"_id":req.body.id});
-        res.status(200).json({'status':'success', 'data':'Tour Deleted Succesfully'})
+        const deletedTour= await Tour.deleteOne({"_id":req.body.id});
+        res.status(200).json({'status':'success', 'data':deletedTour})
     }
     catch (err) {
         res.status(400).json({
