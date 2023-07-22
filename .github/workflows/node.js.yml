@@ -27,4 +27,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - env: 
-    MONGO_PASS: ${{ secrets.SECRET_TOKEN }}
+    MONGO_PASS: ${{ secrets.CLUSTER_SECRET }}
