@@ -1,8 +1,8 @@
 name: GitHub Actions Secret Example
 
 on:
-  pull:
-    branches: [ main ]
+  push:
+    branches: [ master ]
 
 jobs:
   secrets-in-github-actions:
