@@ -1,13 +1,13 @@
 const dotenv= require('dotenv')
 dotenv.config({path:`${__dirname}/config.env`})
 const app = require('./app')
-const abc= process.env.WHO_TO_TRUST
+
 
 const mongoose= require('mongoose');
 const DB = //process.env.DATABASE.replace(
     process.env.DATABASEa.replace(
     '<password>',
-    abc
+    process.env.WHO_TO_TRUST
   );
   
   mongoose
