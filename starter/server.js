@@ -8,7 +8,7 @@ const mongoose= require('mongoose');
 const DB = //process.env.DATABASE.replace(
     process.env.DATABASEa.replace(
     '<password>',
-    process.env.dbpass
+    process.env.MONGO_PASS
   );
   
   mongoose
