@@ -1,4 +1,0 @@
-# Use a GitHub Actions secret variable in a bash shell
-- name: ABC
-  env: 
-    dbpass: ${{ secrets.CLUSTER_SECRET }}
