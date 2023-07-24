@@ -5,9 +5,9 @@ const app = require('./app')
 
 const mongoose= require('mongoose');
 const DB = //process.env.DATABASE.replace(
-    process.env.DATABASEa.replace(
+    process.env.DATABASE_LOCAL.replace(
     '<password>',
-    process.env.WHO_TO_TRUST
+    process.env.DATABASE_PASSWORD
   );
   
   mongoose
